@@ -13,7 +13,7 @@ module.exports = (env, options) => {
 
   return {
     mode: isProduction ? 'production' : 'development',
-    devtool: isProduction ? 'none' : 'source-map',
+    devtool: isProduction ? 'source-map' : 'eval',
     entry: ['./src/index.js'],
     output: {
       filename: 'bundle.js',
